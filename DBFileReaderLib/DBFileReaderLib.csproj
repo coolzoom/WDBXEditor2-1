@@ -13,6 +13,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Common\HTFXStructs.cs" />
+    <Compile Remove="HotfixReader.cs" />
+    <Compile Remove="Readers\HTFXReader.cs" />
+    <Compile Remove="Readers\WDB2Reader.cs" />
+    <Compile Remove="Readers\WDB3Reader.cs" />
+    <Compile Remove="Readers\WDB4Reader.cs" />
+    <Compile Remove="Readers\WDB5Reader.cs" />
+    <Compile Remove="Readers\WDB6Reader.cs" />
+    <Compile Remove="Readers\WDBCReader.cs" />
+    <Compile Remove="Readers\WDC1Reader.cs" />
+    <Compile Remove="Readers\WDC2Reader.cs" />
+    <Compile Remove="Writers\WDB2Writer.cs" />
+    <Compile Remove="Writers\WDB3Writer.cs" />
+    <Compile Remove="Writers\WDB4Writer.cs" />
+    <Compile Remove="Writers\WDB5Writer.cs" />
+    <Compile Remove="Writers\WDB6Writer.cs" />
+    <Compile Remove="Writers\WDBCWriter.cs" />
+    <Compile Remove="Writers\WDC1Writer.cs" />
+    <Compile Remove="Writers\WDC2Writer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0-preview.1.20120.5" />
   </ItemGroup>
 

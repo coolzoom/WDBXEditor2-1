@@ -56,31 +56,31 @@ namespace DBFileReaderLib
                     case "WDC3":
                         _reader = new WDC3Reader(stream);
                         break;
-                    case "WDC2":
-                    case "1SLC":
-                        _reader = new WDC2Reader(stream);
-                        break;
-                    case "WDC1":
-                        _reader = new WDC1Reader(stream);
-                        break;
-                    case "WDB6":
-                        _reader = new WDB6Reader(stream);
-                        break;
-                    case "WDB5":
-                        _reader = new WDB5Reader(stream);
-                        break;
-                    case "WDB4":
-                        _reader = new WDB4Reader(stream);
-                        break;
-                    case "WDB3":
-                        _reader = new WDB3Reader(stream);
-                        break;
-                    case "WDB2":
-                        _reader = new WDB2Reader(stream);
-                        break;
-                    case "WDBC":
-                        _reader = new WDBCReader(stream);
-                        break;
+                    //case "WDC2":
+                    //case "1SLC":
+                    //    _reader = new WDC2Reader(stream);
+                    //    break;
+                    //case "WDC1":
+                    //    _reader = new WDC1Reader(stream);
+                    //    break;
+                    //case "WDB6":
+                    //    _reader = new WDB6Reader(stream);
+                    //    break;
+                    //case "WDB5":
+                    //    _reader = new WDB5Reader(stream);
+                    //    break;
+                    //case "WDB4":
+                    //    _reader = new WDB4Reader(stream);
+                    //    break;
+                    //case "WDB3":
+                    //    _reader = new WDB3Reader(stream);
+                    //    break;
+                    //case "WDB2":
+                    //    _reader = new WDB2Reader(stream);
+                    //    break;
+                    //case "WDBC":
+                    //    _reader = new WDBCReader(stream);
+                    //    break;
                     default:
                         throw new Exception("DB type " + Identifier + " is not supported!");
                 }
@@ -145,31 +145,31 @@ namespace DBFileReaderLib
                 case "WDC3":
                     writer = new WDC3Writer<T>((WDC3Reader)_reader, storage, stream);
                     break;
-                case "WDC2":
-                case "1SLC":
-                    writer = new WDC2Writer<T>((WDC2Reader)_reader, storage, stream);
-                    break;
-                case "WDC1":
-                    writer = new WDC1Writer<T>((WDC1Reader)_reader, storage, stream);
-                    break;
-                case "WDB6":
-                    writer = new WDB6Writer<T>((WDB6Reader)_reader, storage, stream);
-                    break;
-                case "WDB5":
-                    writer = new WDB5Writer<T>((WDB5Reader)_reader, storage, stream);
-                    break;
-                case "WDB4":
-                    writer = new WDB4Writer<T>((WDB4Reader)_reader, storage, stream);
-                    break;
-                case "WDB3":
-                    writer = new WDB3Writer<T>((WDB3Reader)_reader, storage, stream);
-                    break;
-                case "WDB2":
-                    writer = new WDB2Writer<T>((WDB2Reader)_reader, storage, stream);
-                    break;
-                case "WDBC":
-                    writer = new WDBCWriter<T>((WDBCReader)_reader, storage, stream);
-                    break;
+                //case "WDC2":
+                //case "1SLC":
+                //    writer = new WDC2Writer<T>((WDC2Reader)_reader, storage, stream);
+                //    break;
+                //case "WDC1":
+                //    writer = new WDC1Writer<T>((WDC1Reader)_reader, storage, stream);
+                //    break;
+                //case "WDB6":
+                //    writer = new WDB6Writer<T>((WDB6Reader)_reader, storage, stream);
+                //    break;
+                //case "WDB5":
+                //    writer = new WDB5Writer<T>((WDB5Reader)_reader, storage, stream);
+                //    break;
+                //case "WDB4":
+                //    writer = new WDB4Writer<T>((WDB4Reader)_reader, storage, stream);
+                //    break;
+                //case "WDB3":
+                //    writer = new WDB3Writer<T>((WDB3Reader)_reader, storage, stream);
+                //    break;
+                //case "WDB2":
+                //    writer = new WDB2Writer<T>((WDB2Reader)_reader, storage, stream);
+                //    break;
+                //case "WDBC":
+                //    writer = new WDBCWriter<T>((WDBCReader)_reader, storage, stream);
+                //    break;
             }
         }
 
